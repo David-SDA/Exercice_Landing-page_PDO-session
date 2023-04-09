@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2em;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* Les listes de la première section */
+.listeNavigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.listeNavigation li{
+    margin: 0 0.6vw;
+}
+
+/* La première section */
+#accueil{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 3vh;
+    background: radial-gradient(rgb(139, 195, 245), #1294b8);
+    height: 100vh;
+}
+
+/* La barre de navigation dans la première section */
+#barreNavigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10vw;
+    color: #fff;
+}
+
+/* Le contenu au centre de la première section */
+#articleAccueil{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 12vw 18vh 12vw;
+}
+
+/* Le contenu à gauche de l'image */
+#articleAccueilGauche{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+}
+#articleAccueilGauche > *{
+    margin-bottom: 5vh;
+}
+#articleAccueilGauche h2{
+    line-height: 1.3em;
+    font-size: 3.5em;
+}
+#articleAccueilGauche p{
+    font-size: 1.15em;
+}
+
+/* L'image d'illustration */
+#imageOrdinateur{
+    width: 40vw;
+    height: auto;
+}
