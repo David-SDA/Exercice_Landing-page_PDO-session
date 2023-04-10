@@ -44,7 +44,7 @@
                     </p>
                     <form action="">
                         <input type="text" name="email" id="email" placeholder="Enter your email">
-                        <input type="submit" value="SUBSCRIBE">
+                        <input type="submit" value="SUBSCRIBE" id="subscribe">
                     </form>
                 </article>
                 <aside>

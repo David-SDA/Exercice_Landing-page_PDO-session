@@ -20,6 +20,14 @@ a{
     text-decoration: none;
 }
 
+input{
+    font-family: 'Poppins', sans-serif;
+}
+
+/***************************************************************/
+/*              PREMIÈRE SECTION : ACCUEIL                     */
+/***************************************************************/
+
 /* Les listes de la première section */
 .listeNavigation{
     display: flex;
@@ -88,6 +96,38 @@ a{
 }
 #articleAccueilGauche p{
     font-size: 1.15em;
+}
+#articleAccueilGauche form{
+    position: relative;
+    width: 100%;
+}
+
+/* L'input pour l'email */
+#email{
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    height: 5vh;
+    border: none;
+    border-radius: 100px;
+}
+
+/* L'input pour submit */
+#subscribe{
+    background-color: #1294b8;
+    color: #fff;
+    width: 25%;
+    height: 4.2vh;
+    border: none;
+    border-radius: 100px;
+    position: absolute;
+    top: 8%;
+    right: 1%;
+    transition: background-color 1s;
+}
+#subscribe:hover{
+    cursor: pointer;
+    background-color: rgb(128, 187, 238);
 }
 
 /* L'image d'illustration */
