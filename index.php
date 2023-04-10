@@ -16,21 +16,21 @@
                 <h1>Kucra</h1>
                 <nav>
                     <ul class="listeNavigation">
-                        <li>HOME</li>
-                        <li>FEATURES</li>
-                        <li>CLIENT</li>
-                        <li>PRICING</li>
-                        <li>FAQ</li>
-                        <li>ABOUT</li>
-                        <li>BLOG</li>
-                        <li>CONTACT</li>
+                        <li><a href="#accueil">HOME</a></li>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">CLIENT</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul class="listeNavigation">
-                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </nav>
             </header>
