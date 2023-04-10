@@ -146,20 +146,26 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 25vw;
     height: 25vw;
     border-radius: 10px;
-    margin: 0 2vw;
-    padding: 10vh 3vw;
+    margin: 0 1vw;
+    padding: 5vh 2.5vw 10vh 2.5vw;
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: transform 0.5s;
 }
 .carte h2{
-    font-size: 5em;
+    font-size: 4em;
+    margin-bottom: 2vh;
 }
 .carte h3{
     font-size: 2em;
+    margin-bottom: 1vh;
+}
+.carte:hover{
+    transform: translateY(-1vh);
 }
 
 /* La deuxième section */
@@ -176,6 +182,9 @@ input{
     width: 30vw;
     text-align: center;
     padding-top: 8vh;
+}
+#features header h1{
+    padding-bottom: 10px;
 }
 #features header p{
     color: #b3b3b3;
