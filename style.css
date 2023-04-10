@@ -190,6 +190,7 @@ input{
     color: #b3b3b3;
 }
 
+/* Le groupe de cartes */
 #cartes{
     display: flex;
     flex-direction: row;
