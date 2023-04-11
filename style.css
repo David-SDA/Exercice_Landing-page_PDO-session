@@ -204,3 +204,73 @@ input{
 /***************************************************************/
 /*              TROISIÈME SECTION : TEAM                       */
 /***************************************************************/
+
+/* Le rectangle avec une personne et une donnée */
+.personne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 2.5vw 10vh 2.5vw;
+}
+.personne p{
+    margin-bottom: 5vh;
+    color: #b3b3b3;
+}
+.personne h2{
+    font-weight: 500;
+}
+.personne h3{
+    font-weight: 400;
+}
+.personne figure{
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* L'image d'une personne */
+.imagePersonne{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    filter: grayscale();
+    transition: all 0.5s ease-in-out;
+}
+.imagePersonne:hover{
+    filter: none;
+    transform: scale(1.1);
+}
+
+/* La troisième section */
+#team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+#team header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    text-align: center;
+    padding-top: 8vh;
+}
+#team header h1{
+    padding-bottom: 10px;
+}
+#team header p{
+    color: #b3b3b3;
+    width: 35vw;
+}
+
+/* Le groupe de personnes */
+#personnes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5vh;
+}
