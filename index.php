@@ -85,6 +85,70 @@
                 </article>
             </article>
         </section>
+        <section id="team">
+            <header>
+                <h1>
+                    We'r dynamic team of talented people of innovative & marketing expert
+                </h1>
+                <p>
+                    To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages of the resulting language.
+                </p>
+            </header>
+            <article id="personnes">
+                <article class="personne">
+                    <h2>1499+</h2>
+                    <p>
+                        Complete Projects
+                    </p>
+                    <figure>
+                        <img src="img/person1.png" alt="Personne 1" class="imagePersonne">
+                    </figure>
+                    <h3>Anna G. Wilhite</h3>
+                    <p>
+                        CEO/Founder
+                    </p>
+                </article>
+                <article class="personne">
+                    <h2>1080K</h2>
+                    <p>
+                        Satisfied Clients
+                    </p>
+                    <figure>
+                        <img src="img/person2.png" alt="Personne 2" class="imagePersonne">
+                    </figure>
+                    <h3>William S. Blay</h3>
+                    <p>
+                        CEO/Co-Founder
+                    </p>
+                </article>
+                <article class="personne">
+                    <h2>608</h2>
+                    <p>
+                        Team Members
+                    </p>
+                    <figure>
+                        <img src="img/person3.png" alt="Personne 3" class="imagePersonne">
+                    </figure>
+                    <h3>Maria B. Morales</h3>
+                    <p>
+                        Web Designer
+                    </p>
+                </article>
+                <article class="personne">
+                    <h2>252</h2>
+                    <p>
+                        Employee
+                    </p>
+                    <figure>
+                        <img src="img/person4.png" alt="Personne 4" class="imagePersonne">
+                    </figure>
+                    <h3>Luke L. Johnston</h3>
+                    <p>
+                        Web Developer
+                    </p>
+                </article>
+            </article>
+        </section>
     <script src="script.js"></script>
     </body>
 </html>
