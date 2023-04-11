@@ -100,9 +100,18 @@
                     <p>
                         Complete Projects
                     </p>
-                    <figure>
-                        <img src="img/person1.png" alt="Personne 1" class="imagePersonne">
-                    </figure>
+                    <div id="imageReseau">
+                        <nav id="personneReseau">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
+                            </ul>
+                        </nav>
+                        <figure>
+                            <img src="img/person1.png" alt="Personne 1" class="imagePersonne">
+                        </figure>
+                    </div>
                     <h3>Anna G. Wilhite</h3>
                     <p>
                         CEO/Founder
@@ -113,9 +122,18 @@
                     <p>
                         Satisfied Clients
                     </p>
-                    <figure>
-                        <img src="img/person2.png" alt="Personne 2" class="imagePersonne">
-                    </figure>
+                    <div id="imageReseau">
+                        <nav id="personneReseau">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
+                            </ul>
+                        </nav>
+                        <figure>
+                            <img src="img/person2.png" alt="Personne 2" class="imagePersonne">
+                        </figure>
+                    </div>
                     <h3>William S. Blay</h3>
                     <p>
                         CEO/Co-Founder
@@ -126,9 +144,18 @@
                     <p>
                         Team Members
                     </p>
-                    <figure>
-                        <img src="img/person3.png" alt="Personne 3" class="imagePersonne">
-                    </figure>
+                    <div id="imageReseau">
+                        <nav id="personneReseau">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
+                            </ul>
+                        </nav>
+                        <figure>
+                            <img src="img/person3.png" alt="Personne 3" class="imagePersonne">
+                        </figure>
+                    </div>
                     <h3>Maria B. Morales</h3>
                     <p>
                         Web Designer
@@ -139,9 +166,18 @@
                     <p>
                         Employee
                     </p>
-                    <figure>
-                        <img src="img/person4.png" alt="Personne 4" class="imagePersonne">
-                    </figure>
+                    <div id="imageReseau">
+                        <nav id="personneReseau">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
+                            </ul>
+                        </nav>
+                        <figure>
+                            <img src="img/person4.png" alt="Personne 4" class="imagePersonne">
+                        </figure>
+                    </div>
                     <h3>Luke L. Johnston</h3>
                     <p>
                         Web Developer
