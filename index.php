@@ -325,7 +325,7 @@
                         <button>Join Now</button>
                     </a>
                 </article>
-                <article class="offre">
+                <article class="offre selectionne">
                     <p id="sale">
                         20% sale
                     </p>
