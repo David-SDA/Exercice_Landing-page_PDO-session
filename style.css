@@ -558,6 +558,7 @@ button{
 .offre p{
     align-self: center;
     position: relative;
+    margin-left: 20px;
 }
 .offre a{
    width: 100%;
@@ -593,7 +594,7 @@ button{
     font-size: 2.5em;
     position: absolute;
     top: 1.8vh;
-    left: -1vw;
+    left: -1.3vw;
 }
 
 /* Texte "/month" */
@@ -637,6 +638,7 @@ button{
 
 .fonctionnaliteGauche li, .fonctionnaliteDroite li{
     padding-top: 2vh;
+    font-size: 1.1em;
 }
 
 /* La septième section */
