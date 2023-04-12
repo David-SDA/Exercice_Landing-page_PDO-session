@@ -195,6 +195,64 @@
                 <input type="submit" value="Get Started">
             </article>
         </section>
+        <section id="blog">
+            <header>
+                <h1>Our Blog</h1>
+                <p>
+                    It is a long established fact that a reader will be of a page when established fact looking at its layout.
+                </p>
+            </header>
+            <article id="sujetsBlog">
+                <article class="sujetBlog">
+                    <figure>
+                        <img src="img/blog3.png" alt="Image blog 3">
+                        <figcaption id="infoSujetImage">
+                            <h3><i class="fa-regular fa-user"></i> Calvin Carlo</h3>
+                            <p>
+                                <i class="fa-regular fa-clock"></i> 20th March 2021
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <h2>Doing a cross country road trip</h2>
+                    <p>
+                        We craft digital, graphic and dimensional thinking, to create category leading brand.
+                    </p>
+                    <a href="#">Read more</a>
+                </article>
+                <article class="sujetBlog">
+                    <figure>
+                        <img src="img/blog1.png" alt="Image blog 1">
+                        <figcaption id="infoSujetImage">
+                            <h3><i class="fa-regular fa-user"></i> Ruben Reed</h3>
+                            <p>
+                                <i class="fa-regular fa-clock"></i> 01th July 2021
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <h2>New exhibition at our Museum</h2>
+                    <p>
+                        Even the all-powerful Pointing has no control about the blind almost unorthographic.
+                    </p>
+                    <a href="#">Read more</a>
+                </article>
+                <article class="sujetBlog">
+                    <figure>
+                        <img src="img/blog2.png" alt="Image blog 2">
+                        <figcaption id="infoSujetImage">
+                            <h3><i class="fa-regular fa-user"></i> Theresa Sinclair</h3>
+                            <p>
+                                <i class="fa-regular fa-clock"></i> 25th July 2021
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <h2>Design your apps in your own way</h2>
+                    <p>
+                        Pityful a rethoric question ran over her cheek, then she continued her way.
+                    </p>
+                    <a href="#">Read more</a>
+                </article>
+            </article>
+        </section>
     <script src="script.js"></script>
     </body>
 </html>
