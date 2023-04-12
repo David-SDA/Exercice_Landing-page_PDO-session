@@ -603,6 +603,7 @@ button{
     font-weight: 500;
 }
 
+/* Le dollar et le prix */
 .dollar, .prix{
     color: #3f8efd;
 }
@@ -636,6 +637,7 @@ button{
     text-align: end;
 }
 
+/* Les deux listes */
 .fonctionnaliteGauche li, .fonctionnaliteDroite li{
     padding-top: 2vh;
     font-size: 1.1em;
@@ -671,6 +673,7 @@ button{
     margin-top: 10vh;
 }
 
+/* Partie d'affichage de la réduction */
 #sale{
     position: absolute;
     top: 0;
