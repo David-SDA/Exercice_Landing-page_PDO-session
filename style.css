@@ -692,3 +692,48 @@ button{
 /***************************************************************/
 /*              DERNIÈME SECTION : FOOTER                      */
 /***************************************************************/
+
+/* Le footer */
+footer{
+    background-color: #24262a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100%;
+}
+
+/* Les liens du haut */
+#liensReseau{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#liensReseau li{
+    margin-bottom: 2vh;
+}
+#liensReseau a{
+    color: #b3b3b3;
+    margin: 0 1vw;
+    padding: 1vh;
+    border: 1px solid #b3b3b3;
+    border-radius: 100%;
+}
+
+/* Les liens du milieu */
+#liens{
+    color: #b3b3b3;
+    margin: 1vh 0;
+}
+#liens a{
+    color: #b3b3b3;
+    margin: 0 1vw;
+}
+
+/* Le texte du bas */
+#bas{
+    color: #b3b3b3;
+    margin-top: 1vh;
+}

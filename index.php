@@ -391,7 +391,7 @@
             <p id="liens">
                 <a href="#">Terms & Condition</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
             </p>
-            <p>
+            <p id="bas">
                 2022 &copy Kucra - Landing Page Template by Pichforest
             </p>
         </footer>
