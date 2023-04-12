@@ -314,6 +314,8 @@ input{
 /***************************************************************/
 /*              QUATRIÈME SECTION : PARALLAX                   */
 /***************************************************************/
+
+/* La quatrièeme section */
 #parallax{
     position: relative;
 }
@@ -361,6 +363,7 @@ input{
     transform: translateY(-1vh);
 }
 
+/* L'image de l'effet parallax */
 #imageParallax{
     background-image: url(img/parallax.png);
     background-attachment: fixed;
