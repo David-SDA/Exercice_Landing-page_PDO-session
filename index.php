@@ -305,7 +305,7 @@
                     <p>
                         <span class="dollar">$</span><span class="prix">9</span><span class="parMois">/month</span>
                     </p>
-                    <div id="fonctionnalite">
+                    <div class="fonctionnalite">
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
@@ -333,7 +333,7 @@
                     <p>
                         <span class="dollar">$</span><span class="prix">19</span><span class="parMois">/month</span>
                     </p>
-                    <div id="fonctionnalite">
+                    <div class="fonctionnalite">
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
@@ -358,7 +358,7 @@
                     <p>
                         <span class="dollar">$</span><span class="prix">29</span><span class="parMois">/month</span>
                     </p>
-                    <div id="fonctionnalite">
+                    <div class="fonctionnalite">
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>

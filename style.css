@@ -537,3 +537,125 @@ button{
 /***************************************************************/
 /*              SEPTIÈME SECTION : PRICING                     */
 /***************************************************************/
+
+/* Une offre */
+.offre{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw;
+    padding: 4vh 2vw;
+    width: 22vw;
+    height: 57vh;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.offre h2{
+    font-size: 1.3em;
+    align-self: center;
+}
+.offre p{
+    align-self: center;
+    position: relative;
+}
+.offre a{
+   width: 100%;
+}
+.offre button{
+    width: 100%;
+    height: 6vh;
+    border: 2px solid #3f8efd;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #3f8efd;
+    font-size: 1.2em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Le nombre représentant le prix */
+.prix{
+    font-size: 5em;
+}
+
+/* Le symbole dollar */
+.dollar{
+    font-size: 2.5em;
+    position: absolute;
+    top: 1.8vh;
+    left: -1vw;
+}
+
+/* Texte "/month" */
+.parMois{
+    color: #b3b3b3;
+    font-weight: 500;
+}
+
+.dollar, .prix{
+    color: #3f8efd;
+}
+
+/* Le détail des fonctionnalités */
+.fonctionnalite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+/* La liste des fonctionnalité à gauche */
+.fonctionnaliteGauche{
+    align-self: flex-start;
+}
+
+/* Le symbole valide */
+.fa-circle-check{
+    color: green;
+}
+
+/* Le symbole non-valide */
+.fa-circle-xmark{
+    color: red;
+}
+
+/* La liste des fonctionnalité à droite */
+.fonctionnaliteDroite{
+    align-self: flex-end;
+    text-align: end;
+}
+
+.fonctionnaliteGauche li, .fonctionnaliteDroite li{
+    padding-top: 2vh;
+}
+
+/* La septième section */
+#pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #eeeeee;
+}
+#pricing header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    padding-top: 5vh;
+    text-align: center;
+}
+#pricing header h1{
+    padding-bottom: 1vh;
+}
+#pricing header p{
+    color: #b3b3b3;
+}
+
+/* La boîte qui contient toutes les offres */
+#offres{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+}
