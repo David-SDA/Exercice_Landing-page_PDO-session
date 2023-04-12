@@ -254,7 +254,32 @@
             </article>
         </section>
         <section id="stats">
-            
+            <article>
+                <h1>We are digital creative Landing Page</h1>
+                <p>
+                    The difference between a successful person and others is not a lack of strength, not a lack knowledge, but rather a lack of will. Composed in a pseudo-Latin language which more or less pseudo-Latin language corresponds.
+                </p>
+                <div id="statistiques">
+                    <div class="statistique">
+                        <h2>4957</h2>
+                        <p>
+                            Happy User
+                        </p>
+                    </div>
+                    <div class="statistique">
+                        <h2>1599</h2>
+                        <p>
+                            Complete Project
+                        </p>
+                    </div>
+                </div>
+                <input type="submit" value="Learn More">
+            </article>
+            <aside>
+                <figure>
+                    <img src="img/creativity.png" alt="">
+                </figure>
+            </aside>
         </section>
     <script src="script.js"></script>
     </body>
