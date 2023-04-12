@@ -11,6 +11,7 @@
         <title>Kukra</title>
     </head>
     <body>
+
         <section id="accueil">
             <header id="barreNavigation">
                 <h1>Kucra</h1>
@@ -19,7 +20,7 @@
                         <li><a href="#accueil">HOME</a></li>
                         <li><a href="#features">FEATURES</a></li>
                         <li><a href="#">CLIENT</a></li>
-                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#pricing">PRICING</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="#blog">BLOG</a></li>
@@ -54,6 +55,7 @@
                 </aside>
             </article>
         </section>
+
         <section id="features">
             <header>
                 <h1>Products Features</h1>
@@ -85,6 +87,7 @@
                 </article>
             </article>
         </section>
+
         <section id="team">
             <header>
                 <h1>
@@ -185,6 +188,7 @@
                 </article>
             </article>
         </section>
+
         <section id="parallax">
             <div id="imageParallax"></div>
             <article>
@@ -197,6 +201,7 @@
                 </a>
             </article>
         </section>
+
         <section id="blog">
             <header>
                 <h1>Our Blog</h1>
@@ -255,6 +260,7 @@
                 </article>
             </article>
         </section>
+
         <section id="stats">
             <article>
                 <h1>We are digital creative Landing Page</h1>
@@ -285,6 +291,96 @@
                 </figure>
             </aside>
         </section>
+
+        <section id="pricing">
+            <header>
+                <h1>Our Pricing</h1>
+                <p>
+                    It is a long established fact that a reader will be of a page when established fact looking at its layout.
+                </p>
+            </header>
+            <article id="offres">
+                <article class="offre">
+                    <h2>Starter</h2>
+                    <p>
+                        <span class="dollar">$</span><span class="prix">9</span><span class="parMois">/month</span>
+                    </p>
+                    <div id="fonctionnalite">
+                        <ul class="fonctionnaliteGauche">
+                            <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
+                            <li><i class="fa-regular fa-circle-xmark"></i> Support:No</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Domain</li>
+                            <li><i class="fa-regular fa-circle-xmark"></i> Hidden Fees</li>
+                        </ul>
+                        <ul class="fonctionnaliteDroite">
+                            <li>1GB</li>
+                            <li>500MB</li>
+                            <li>No</li>
+                            <li>1</li>
+                            <li>No</li>
+                        </ul>
+                    </div>
+                    <a href="#">
+                        <button>Join Now</button>
+                    </a>
+                </article>
+                <article class="offre">
+                    <p id="sale">
+                        20% sale
+                    </p>
+                    <h2>Advanced</h2>
+                    <p>
+                        <span class="dollar">$</span><span class="prix">19</span><span class="parMois">/month</span>
+                    </p>
+                    <div id="fonctionnalite">
+                        <ul class="fonctionnaliteGauche">
+                            <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Support:No</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Domain</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Hidden Fees</li>
+                        </ul>
+                        <ul class="fonctionnaliteDroite">
+                            <li>2GB</li>
+                            <li>1GB</li>
+                            <li>Yes</li>
+                            <li>3</li>
+                            <li>No</li>
+                        </ul>
+                    </div>
+                    <a href="#">
+                        <button>Join Now</button>
+                    </a>
+                </article>
+                <article class="offre">
+                    <h2>Professional</h2>
+                    <p>
+                        <span class="dollar">$</span><span class="prix">29</span><span class="parMois">/month</span>
+                    </p>
+                    <div id="fonctionnalite">
+                        <ul class="fonctionnaliteGauche">
+                            <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Support:No</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Domain</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Hidden Fees</li>
+                        </ul>
+                        <ul class="fonctionnaliteDroite">
+                            <li>3GB</li>
+                            <li>2GB</li>
+                            <li>Yes</li>
+                            <li>Unlimited</li>
+                            <li>No</li>
+                        </ul>
+                    </div>
+                    <a href="#">
+                        <button>Join Now</button>
+                    </a>
+                </article>
+            </article>
+        </section>
+
     <script src="script.js"></script>
     </body>
 </html>
