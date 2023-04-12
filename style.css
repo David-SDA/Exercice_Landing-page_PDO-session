@@ -325,10 +325,23 @@ input{
     left: 0;
     right: 0;
     margin: auto;
+    width: 70vw;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+#parallax h1{
+    font-weight: 500;
+    font-size: 2.5em;
+}
+#parallax p{
+    color: #d7d5d5;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 2vh;
 }
 
 #imageParallax{
@@ -337,6 +350,6 @@ input{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.6);
-    height: 65vh;  
+    filter: brightness(0.5) saturate(0.7);
+    height: 60vh;  
 }
