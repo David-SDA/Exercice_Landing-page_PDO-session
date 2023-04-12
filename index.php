@@ -253,6 +253,9 @@
                 </article>
             </article>
         </section>
+        <section id="stats">
+            
+        </section>
     <script src="script.js"></script>
     </body>
 </html>
