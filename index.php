@@ -273,11 +273,13 @@
                         </p>
                     </div>
                 </div>
-                <input type="submit" value="Learn More">
+                <a href="#">
+                    <button>Learn More</button>
+                </a>
             </article>
             <aside>
                 <figure>
-                    <img src="img/creativity.png" alt="">
+                    <img src="img/creativity.png" alt="Image creativity">
                 </figure>
             </aside>
         </section>
