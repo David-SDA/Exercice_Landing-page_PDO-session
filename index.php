@@ -185,6 +185,16 @@
                 </article>
             </article>
         </section>
+        <section id="parallax">
+            <div id="imageParallax"></div>
+            <article>
+                <h1>Let's get started with Kukra</h1>
+                <p>
+                    They are a good way to get you started if you want to build something similar or use from existing apps which will reduce the cost, efforts and time of the developers.
+                </p>
+                <input type="submit" value="Get Started">
+            </article>
+        </section>
     <script src="script.js"></script>
     </body>
 </html>
