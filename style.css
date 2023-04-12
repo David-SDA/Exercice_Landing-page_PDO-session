@@ -24,6 +24,10 @@ input{
     font-family: 'Poppins', sans-serif;
 }
 
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
 /***************************************************************/
 /*              PREMIÈRE SECTION : ACCUEIL                     */
 /***************************************************************/
@@ -345,7 +349,7 @@ input{
     font-size: 1.2em;
     margin-bottom: 2vh;
 }
-#parallax input{
+#parallax button{
     background-color: transparent;
     color: #fff;
     font-size: 1.2em;
@@ -357,7 +361,7 @@ input{
     cursor: pointer;
     transition: all 1s;
 }
-#parallax input:hover{
+#parallax button:hover{
     color: #000;
     background-color: #fff;
     transform: translateY(-1vh);
@@ -501,7 +505,6 @@ input{
 #stats button{
     background-color: #3f8efd;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
     font-weight: 400;
     border: none;

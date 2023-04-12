@@ -192,7 +192,9 @@
                 <p>
                     They are a good way to get you started if you want to build something similar or use from existing apps which will reduce the cost, efforts and time of the developers.
                 </p>
-                <input type="submit" value="Get Started">
+                <a href="#">
+                    <button>Get Started</button>
+                </a>
             </article>
         </section>
         <section id="blog">
