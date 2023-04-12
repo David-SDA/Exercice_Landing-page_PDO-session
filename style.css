@@ -377,3 +377,93 @@ input{
 /***************************************************************/
 /*              CINQUIÈME SECTION : BLOG                       */
 /***************************************************************/
+
+/* Un des sujets affichés */
+.sujetBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 23vw;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 2vw;
+    overflow: hidden;
+}
+.sujetBlog figure{
+    position: relative;
+}
+.sujetBlog p{
+    color: #000;
+    font-weight: 200;
+    margin-bottom: 1vh;
+}
+.sujetBlog h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 1vh 0;
+}
+.sujetBlog a{
+    color: #1294b8;
+    font-size: 1.1em;
+}
+.sujetBlog figure:hover > .imageBlog img{
+    cursor: pointer;
+    filter: brightness(0.6);
+}
+.sujetBlog figure:hover > .infoSujetImage{
+    opacity: 1;
+}
+
+/* L'image d'un sujet */
+.imageBlog img{
+    width: 23vw;
+    height: auto;
+    transition: filter 0.5s;
+}
+
+/* Les infos du créateur du sujet */
+.infoSujetImage{
+    position: absolute;
+    top: 12%;
+    left: 8.5%;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.infoSujetImage p{
+    color: #fff;
+}
+
+/* La cinquième section */
+#blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+#blog header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    text-align: center;
+    padding-top: 7vh;
+}
+#blog header h1{
+    padding-bottom: 1vh;
+}
+#blog header p{
+    color: #b3b3b3;
+}
+
+/* Les différents sujets du blog qui sont affichés */
+#sujetsBlog{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10vh auto;
+    text-align: start;
+}

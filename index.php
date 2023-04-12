@@ -22,7 +22,7 @@
                         <li><a href="#">PRICING</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#blog">BLOG</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -205,8 +205,8 @@
             <article id="sujetsBlog">
                 <article class="sujetBlog">
                     <figure>
-                        <img src="img/blog3.png" alt="Image blog 3">
-                        <figcaption id="infoSujetImage">
+                        <a href="#" class="imageBlog"><img src="img/blog3.png" alt="Image blog 3"></a>
+                        <figcaption class="infoSujetImage">
                             <h3><i class="fa-regular fa-user"></i> Calvin Carlo</h3>
                             <p>
                                 <i class="fa-regular fa-clock"></i> 20th March 2021
@@ -221,8 +221,8 @@
                 </article>
                 <article class="sujetBlog">
                     <figure>
-                        <img src="img/blog1.png" alt="Image blog 1">
-                        <figcaption id="infoSujetImage">
+                        <a href="#" class="imageBlog"><img src="img/blog1.png" alt="Image blog 1"></a>
+                        <figcaption class="infoSujetImage">
                             <h3><i class="fa-regular fa-user"></i> Ruben Reed</h3>
                             <p>
                                 <i class="fa-regular fa-clock"></i> 01th July 2021
@@ -237,8 +237,8 @@
                 </article>
                 <article class="sujetBlog">
                     <figure>
-                        <img src="img/blog2.png" alt="Image blog 2">
-                        <figcaption id="infoSujetImage">
+                        <a href="#" class="imageBlog"><img src="img/blog2.png" alt="Image blog 2"></a>
+                        <figcaption class="infoSujetImage">
                             <h3><i class="fa-regular fa-user"></i> Theresa Sinclair</h3>
                             <p>
                                 <i class="fa-regular fa-clock"></i> 25th July 2021
