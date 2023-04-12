@@ -381,6 +381,21 @@
             </article>
         </section>
 
+        <footer>
+            <ul id="liensReseau">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+            </ul>
+            <p id="liens">
+                <a href="#">Terms & Condition</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
+            </p>
+            <p>
+                2022 &copy Kucra - Landing Page Template by Pichforest
+            </p>
+        </footer>
+
     <script src="script.js"></script>
     </body>
 </html>
