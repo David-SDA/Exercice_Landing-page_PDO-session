@@ -304,11 +304,12 @@
             </header>
             <article id="offres">
                 <?php 
+                    $data = getAll();
                     for ($i = 1; $i<4; $i++){
                         $onlineSpace = (getOnlinespace($i) >= 1000) ? 'GB' : 'MB';
                         $onlineSpaceValue = (getOnlinespace($i) >= 1000) ? getOnlinespace($i)/1000 : getOnlinespace($i);
                 ?>
-                <article class="offre">
+                <article class="offre <?php if($data[$i-1]["sale"] != 0){echo "selectionne";} ?>">
                     <?php getSale($i) ?>
                     <h2><?php getNom($i) ?></h2>
                     <p>
