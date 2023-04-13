@@ -25,7 +25,7 @@
                     for($i = 1; $i<4; $i++)
                     {
                 ?>
-                <form class="offresUpdate" action="">
+                <form class="offresUpdate" action="db-functions.php?action=update&index=<?= $i ?>" method="post">
                     <div class="update">
                         <div class="updateGauche">
                             <div>
@@ -56,11 +56,11 @@
                             </div>
                             <div>
                                 <h2>Support</h2>
-                                <input type="text" name="support" id="support" value=<?= $data[$i-1]["support"] ?>>
+                                <input type="number" name="support" id="support" value=<?= $data[$i-1]["support"] ?>>
                             </div>
                             <div>
                                 <h2>Hidden Fees</h2>
-                                <input type="text" name="hidden_fees" id="hiddenFees" value=<?= $data[$i-1]["hidden_fees"] ?>>
+                                <input type="number" name="hidden_fees" id="hiddenFees" value=<?= $data[$i-1]["hidden_fees"] ?>>
                             </div>
                         </div>
                     </div>

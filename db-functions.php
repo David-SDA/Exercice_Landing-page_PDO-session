@@ -6,6 +6,7 @@
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
     );
     
+    /* Fonction pour obtenir tout de la table pricing */
     function getAll(){
         global $db;
         $sqlQuery = "SELECT * FROM pricing LIMIT 3";
@@ -151,6 +152,19 @@
             else{
                 echo "Yes";
             }
+        }
+    }
+
+    if(isset($_GET["action"])){
+        switch($_GET["action"]){
+            case "update" :
+                global $db;
+                var_dump($_POST["nom_formule"]);
+                $requete = "UPDATE pricing SET nom_formule = '" . $_POST["nom_formule"] . "', prix = " . $_POST["prix"] . ", sale = " . $_POST["sale"] . ", bandwidth = " . $_POST["bandwidth"] . ", onlinespace = " . $_POST["onlinespace"] . ", support = " . $_POST["support"] . ", domain = '" . $_POST["domain"] . "', hidden_fees = " . $_POST["hidden_fees"] ." WHERE id_formule = " . $_GET["index"];
+                $statement = $db->prepare($requete);
+                $statement->execute();
+                header("Location:admin.php");
+                break;
         }
     }
 ?>
