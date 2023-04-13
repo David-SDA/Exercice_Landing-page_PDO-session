@@ -10,5 +10,16 @@
     $statement = $db->prepare($sqlQuery);
     $statement->execute();
     $formules = $statement->fetchAll();
-
+    
+    /* Fonction pour obtenir le nom d'une formule grâce a sont id */
+    function getNom(int $numeroFormule){
+        global $db;
+        $sqlQuery = "SELECT nom_formule FROM pricing WHERE id_formule = $numeroFormule";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        $nom = $s->fetchAll();
+        foreach($nom as $n){
+            echo $n["nom_formule"];
+        }
+    }
 ?>

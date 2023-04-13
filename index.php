@@ -304,7 +304,7 @@
             </header>
             <article id="offres">
                 <article class="offre">
-                    <h2>Starter</h2>
+                    <h2><?php getNom(1) ?></h2>
                     <p>
                         <span class="dollar">$</span><span class="prix">9</span><span class="parMois">/month</span>
                     </p>
@@ -332,7 +332,7 @@
                     <p id="sale">
                         20% sale
                     </p>
-                    <h2>Advanced</h2>
+                    <h2><?php getNom(2) ?></h2>
                     <p>
                         <span class="dollar">$</span><span class="prix">19</span><span class="parMois">/month</span>
                     </p>
@@ -357,7 +357,7 @@
                     </a>
                 </article>
                 <article class="offre">
-                    <h2>Professional</h2>
+                    <h2><?php getNom(3) ?></h2>
                     <p>
                         <span class="dollar">$</span><span class="prix">29</span><span class="parMois">/month</span>
                     </p>
