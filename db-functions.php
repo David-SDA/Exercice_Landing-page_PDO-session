@@ -89,4 +89,21 @@
             echo $d["domain"];
         }
     }
+
+    /* Fonction pour savoir si il y a des frais cachées dans une formule grâce a son id */
+    function getHiddenFees(int $numeroFormule){
+        global $db;
+        $sqlQuery = "SELECT hidden_fees FROM pricing WHERE id_formule = $numeroFormule";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        $hiddenFees = $s->fetchAll();
+        foreach($hiddenFees as $hf){
+            if($hf["hidden_fees"] == 0){
+                echo "No";
+            }
+            else{
+                echo "Yes";
+            }
+        }
+    }
 ?>
