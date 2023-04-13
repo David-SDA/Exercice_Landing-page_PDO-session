@@ -305,8 +305,8 @@
             <article id="offres">
                 <?php 
                     for ($i = 1; $i<4; $i++){
-                    $onlineSpace = (getOnlinespace($i) >= 1000) ? 'GB' : 'MB';
-                    $onlineSpaceValue = (getOnlinespace($i) >= 1000) ? getOnlinespace($i)/1000 : getOnlinespace($i);
+                        $onlineSpace = (getOnlinespace($i) >= 1000) ? 'GB' : 'MB';
+                        $onlineSpaceValue = (getOnlinespace($i) >= 1000) ? getOnlinespace($i)/1000 : getOnlinespace($i);
                 ?>
                 <article class="offre">
                     <?php getSale($i) ?>
