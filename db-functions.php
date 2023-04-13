@@ -37,6 +37,20 @@
         }
     }
 
+    /* Fonction pour obtenir la réduction d'une formule grâce a son id */
+    function getSale(int $numeroFormule){
+        global $db;
+        $sqlQuery = "SELECT sale FROM pricing WHERE id_formule = $numeroFormule";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        $sale = $s->fetchAll();
+        foreach($sale as $sa){
+            if($sa["sale"] != 0){
+                echo "<p id='sale'>" . $sa["sale"] . "% sale</p>";
+            }
+        }
+    }
+
     /* Fonction pour obtenir la bande passante d'une formule grâce a son id */
     function getBandwidth(int $numeroFormule){
         global $db;
