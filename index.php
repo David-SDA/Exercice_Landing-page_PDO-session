@@ -24,7 +24,7 @@
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="#blog">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#liensReseau">CONTACT</a></li>
                     </ul>
                 </nav>
                 <nav>
@@ -395,7 +395,7 @@
                 2022 &copy Kucra - Landing Page Template by Pichforest
             </p>
         </footer>
-
+        <button id="revenirEnHaut"><i class="fa-solid fa-arrow-up"></i></button>
     <script src="script.js"></script>
     </body>
 </html>

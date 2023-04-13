@@ -746,3 +746,22 @@ footer{
     color: #b3b3b3;
     margin-top: 1vh;
 }
+
+/***************************************************************/
+/*              BOUTON DE RETOUR EN HAUT DE PAGE               */
+/***************************************************************/
+
+/* Le bouton */
+#revenirEnHaut{
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+    width: 3vw;
+    height: 3vw;
+    background-color: #24262a;
+    color: #fff;
+    font-size: 2em;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
