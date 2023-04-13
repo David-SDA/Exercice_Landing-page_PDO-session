@@ -5,13 +5,6 @@
         "",
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
     );
-
-    /*
-    $sqlQuery ="SELECT * FROM pricing";
-    $statement = $db->prepare($sqlQuery);
-    $statement->execute();
-    $formules = $statement->fetchAll();
-    */
     
     function getAll(){
         global $db;
