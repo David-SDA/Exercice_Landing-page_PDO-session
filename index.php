@@ -306,7 +306,7 @@
                 <article class="offre">
                     <h2><?php getNom(1) ?></h2>
                     <p>
-                        <span class="dollar">$</span><span class="prix">9</span><span class="parMois">/month</span>
+                        <span class="dollar">$</span><span class="prix"><?php getPrix(1) ?></span><span class="parMois">/month</span>
                     </p>
                     <div class="fonctionnalite">
                         <ul class="fonctionnaliteGauche">
@@ -334,7 +334,7 @@
                     </p>
                     <h2><?php getNom(2) ?></h2>
                     <p>
-                        <span class="dollar">$</span><span class="prix">19</span><span class="parMois">/month</span>
+                        <span class="dollar">$</span><span class="prix"><?php getPrix(2) ?></span><span class="parMois">/month</span>
                     </p>
                     <div class="fonctionnalite">
                         <ul class="fonctionnaliteGauche">
@@ -359,7 +359,7 @@
                 <article class="offre">
                     <h2><?php getNom(3) ?></h2>
                     <p>
-                        <span class="dollar">$</span><span class="prix">29</span><span class="parMois">/month</span>
+                        <span class="dollar">$</span><span class="prix"><?php getPrix(3) ?></span><span class="parMois">/month</span>
                     </p>
                     <div class="fonctionnalite">
                         <ul class="fonctionnaliteGauche">
