@@ -155,8 +155,10 @@
         }
     }
 
+    /* Switch sur les actions */
     if(isset($_GET["action"])){
         switch($_GET["action"]){
+            /* action d'update de la bdd sur les offres */
             case "update" :
                 global $db;
                 var_dump($_POST["nom_formule"]);
