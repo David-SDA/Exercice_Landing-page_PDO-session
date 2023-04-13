@@ -317,7 +317,7 @@
                             <li><i class="fa-regular fa-circle-xmark"></i> Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
-                            <li>1GB</li>
+                            <li><?php getBandwidth(1) ?>GB</li>
                             <li>500MB</li>
                             <li>No</li>
                             <li>1</li>
@@ -345,7 +345,7 @@
                             <li><i class="fa-regular fa-circle-check"></i> Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
-                            <li>2GB</li>
+                            <li><?php getBandwidth(2) ?>GB</li>
                             <li>1GB</li>
                             <li>Yes</li>
                             <li>3</li>
@@ -370,7 +370,7 @@
                             <li><i class="fa-regular fa-circle-check"></i> Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
-                            <li>3GB</li>
+                            <li><?php getBandwidth(3) ?>GB</li>
                             <li>2GB</li>
                             <li>Yes</li>
                             <li>Unlimited</li>

@@ -25,7 +25,7 @@
         }
     }
 
-    /* Fonction pour obtenir le nom d'une formule grâce a sont id */
+    /* Fonction pour obtenir le prix d'une formule grâce a sont id */
     function getPrix(int $numeroFormule){
         global $db;
         $sqlQuery = "SELECT prix FROM pricing WHERE id_formule = $numeroFormule";
@@ -34,6 +34,18 @@
         $prix = $s->fetchAll();
         foreach($prix as $p){
             echo $p["prix"];
+        }
+    }
+
+    /* Fonction pour obtenir la bande passante d'une formule grâce a sont id */
+    function getBandwidth(int $numeroFormule){
+        global $db;
+        $sqlQuery = "SELECT bandwidth FROM pricing WHERE id_formule = $numeroFormule";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        $bandwidth = $s->fetchAll();
+        foreach($bandwidth as $b){
+            echo $b["bandwidth"];
         }
     }
 ?>
