@@ -303,84 +303,42 @@
                 </p>
             </header>
             <article id="offres">
+                <?php 
+                    for ($i = 1; $i<4; $i++){
+                    $onlineSpace = (getOnlinespace($i) >= 1000) ? 'GB' : 'MB';
+                    $onlineSpaceValue = (getOnlinespace($i) >= 1000) ? getOnlinespace($i)/1000 : getOnlinespace($i);
+                ?>
                 <article class="offre">
-                    <?php getSale(1) ?>
-                    <h2><?php getNom(1) ?></h2>
+                    <?php getSale($i) ?>
+                    <h2><?php getNom($i) ?></h2>
                     <p>
-                        <span class="dollar">$</span><span class="prix"><?php getPrix(1) ?></span><span class="parMois">/month</span>
+                        <span class="dollar">$</span><span class="prix"><?php getPrix($i) ?></span><span class="parMois">/month</span>
                     </p>
                     <div class="fonctionnalite">
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><?php getSupportLogo(1) ?>Support</li>
+                            <li><?php getSupportLogo($i) ?>Support</li>
                             <li><i class="fa-regular fa-circle-check"></i> Domain</li>
-                            <li><?php getHiddenFeesLogo(1) ?>Hidden Fees</li>
+                            <li><?php getHiddenFeesLogo($i) ?>Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
-                            <li><?php getBandwidth(1) ?>GB</li>
-                            <li><?php getOnlinespace(1) ?>MB</li>
-                            <li><?php getSupport(1) ?></li>
-                            <li><?php getDomain(1) ?></li>
-                            <li><?php getHiddenFees(1) ?></li>
+                            <li><?php getBandwidth($i) ?>GB</li>
+                            <li><?= $onlineSpaceValue ?>
+                            <?= $onlineSpace ?>
+                        </li>
+                            <li><?php getSupport($i) ?></li>
+                            <li><?php getDomain($i) ?></li>
+                            <li><?php getHiddenFees($i) ?></li>
                         </ul>
                     </div>
                     <a href="#">
                         <button>Join Now</button>
                     </a>
                 </article>
-                <article class="offre selectionne">
-                    <?php getSale(2) ?>
-                    <h2><?php getNom(2) ?></h2>
-                    <p>
-                        <span class="dollar">$</span><span class="prix"><?php getPrix(2) ?></span><span class="parMois">/month</span>
-                    </p>
-                    <div class="fonctionnalite">
-                        <ul class="fonctionnaliteGauche">
-                            <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><?php getSupportLogo(2) ?>Support</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Domain</li>
-                            <li><?php getHiddenFeesLogo(2) ?>Hidden Fees</li>
-                        </ul>
-                        <ul class="fonctionnaliteDroite">
-                            <li><?php getBandwidth(2) ?>GB</li>
-                            <li><?php getOnlinespace(2) ?>GB</li>
-                            <li><?php getSupport(2) ?></li>
-                            <li><?php getDomain(2) ?></li>
-                            <li><?php getHiddenFees(2) ?></li>
-                        </ul>
-                    </div>
-                    <a href="#">
-                        <button>Join Now</button>
-                    </a>
-                </article>
-                <article class="offre">
-                    <?php getSale(3) ?>
-                    <h2><?php getNom(3) ?></h2>
-                    <p>
-                        <span class="dollar">$</span><span class="prix"><?php getPrix(3) ?></span><span class="parMois">/month</span>
-                    </p>
-                    <div class="fonctionnalite">
-                        <ul class="fonctionnaliteGauche">
-                            <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><?php getSupportLogo(3) ?>Support</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Domain</li>
-                            <li><?php getHiddenFeesLogo(3) ?>Hidden Fees</li>
-                        </ul>
-                        <ul class="fonctionnaliteDroite">
-                            <li><?php getBandwidth(3) ?>GB</li>
-                            <li><?php getOnlinespace(3) ?>GB</li>
-                            <li><?php getSupport(3) ?></li>
-                            <li><?php getDomain(3) ?></li>
-                            <li><?php getHiddenFees(3) ?></li>
-                        </ul>
-                    </div>
-                    <a href="#">
-                        <button>Join Now</button>
-                    </a>
-                </article>
+                <?php
+                    }  
+                ?>
             </article>
         </section>
 

@@ -13,6 +13,15 @@
     $formules = $statement->fetchAll();
     */
     
+    function getAll(){
+        global $db;
+        $sqlQuery = "SELECT * FROM pricing LIMIT 3";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        return $s->fetchAll();
+
+    }
+
     /* Fonction pour obtenir le nom d'une formule grâce a son id */
     function getNom(int $numeroFormule){
         global $db;
@@ -69,10 +78,8 @@
         $sqlQuery = "SELECT onlinespace FROM pricing WHERE id_formule = $numeroFormule";
         $s = $db->prepare($sqlQuery);
         $s->execute();
-        $onlinespace = $s->fetchAll();
-        foreach($onlinespace as $o){
-            echo $o["onlinespace"];
-        }
+        $onlinespace = $s->fetch();
+        return $onlinespace['onlinespace'];
     }
 
     /* Fonction pour obtenir l'affichage du logo check et cross du support d'une formule */
