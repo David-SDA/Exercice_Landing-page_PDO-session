@@ -312,14 +312,14 @@
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><i class="fa-regular fa-circle-xmark"></i> Support:No</li>
+                            <li><i class="fa-regular fa-circle-xmark"></i> Support</li>
                             <li><i class="fa-regular fa-circle-check"></i> Domain</li>
                             <li><i class="fa-regular fa-circle-xmark"></i> Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
                             <li><?php getBandwidth(1) ?>GB</li>
                             <li><?php getOnlinespace(1) ?>MB</li>
-                            <li>No</li>
+                            <li><?php getSupport(1) ?></li>
                             <li>1</li>
                             <li>No</li>
                         </ul>
@@ -340,14 +340,14 @@
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Support:No</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Support</li>
                             <li><i class="fa-regular fa-circle-check"></i> Domain</li>
                             <li><i class="fa-regular fa-circle-check"></i> Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
                             <li><?php getBandwidth(2) ?>GB</li>
                             <li><?php getOnlinespace(2) ?>GB</li>
-                            <li>Yes</li>
+                            <li><?php getSupport(2) ?></li>
                             <li>3</li>
                             <li>No</li>
                         </ul>
@@ -365,14 +365,14 @@
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Support:No</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Support</li>
                             <li><i class="fa-regular fa-circle-check"></i> Domain</li>
                             <li><i class="fa-regular fa-circle-check"></i> Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
                             <li><?php getBandwidth(3) ?>GB</li>
                             <li><?php getOnlinespace(3) ?>GB</li>
-                            <li>Yes</li>
+                            <li><?php getSupport(3) ?></li>
                             <li>Unlimited</li>
                             <li>No</li>
                         </ul>

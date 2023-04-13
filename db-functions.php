@@ -60,4 +60,21 @@
             echo $o["onlinespace"];
         }
     }
+
+    /* Fonction pour savoir si le support est disponible dans une formule grâce a sont id */
+    function getSupport(int $numeroFormule){
+        global $db;
+        $sqlQuery = "SELECT support FROM pricing WHERE id_formule = $numeroFormule";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        $support = $s->fetchAll();
+        foreach($support as $supp){
+            if($supp["support"] == 0){
+                echo "No";
+            }
+            else{
+                echo "Yes";
+            }
+        }
+    }
 ?>
