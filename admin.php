@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    include_once("db-functions.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,7 +24,7 @@
                     for($i = 1; $i<4; $i++)
                     {
                 ?>
-                <article class="offreUpdate">
+                <form class="offresUpdate">
                     <div class="update">
                         <div class="updateGauche">
                             <div>
@@ -58,10 +63,8 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#">
-                        <button>Update</button>
-                    </a>
-                </article> 
+                    <input type="submit" value="Update">
+                </form> 
                 <?php
                     }
                 ?>   

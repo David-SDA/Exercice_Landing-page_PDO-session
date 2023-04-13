@@ -770,7 +770,8 @@ footer{
 /*              STYLE UPDATE ADMIN                             */
 /***************************************************************/
 
-.offreUpdate{
+/* La boite qui contient toute les offres à update */
+.offresUpdate{
     display: flex;
     flex-direction: column;
     margin: 0 1vw;
@@ -781,7 +782,16 @@ footer{
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.offresUpdate input[type=submit]{
+    width: 100%;
+    height: 6vh;
+    border: none;
+    background-color: #3f8efd;
+    color: #fff;
+    cursor: pointer;
+}
 
+/* Une offre à update */
 .update{
     display: flex;
     flex-direction: row;
@@ -794,10 +804,12 @@ footer{
     padding: 1vh 1vw;
 }
 
+/* Les élements à droite et à gauche à update */
 .updateGauche div, .updateDroite div{
     margin-bottom: 2vh;
 }
 
+/* La section qui représente la page */
 #updates{
     display: flex;
     flex-direction: column;
