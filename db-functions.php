@@ -19,7 +19,6 @@
         $s = $db->prepare($sqlQuery);
         $s->execute();
         return $s->fetchAll();
-
     }
 
     /* Fonction pour obtenir le nom d'une formule grâce a son id */

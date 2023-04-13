@@ -21,45 +21,46 @@
             </header>
             <article id="boiteUpdate">
                 <?php
+                    $data = getAll();
                     for($i = 1; $i<4; $i++)
                     {
                 ?>
-                <form class="offresUpdate">
+                <form class="offresUpdate" action="">
                     <div class="update">
                         <div class="updateGauche">
                             <div>
                                 <h2>Name</h2>
-                                <input type="text" name="name" id="name">
+                                <input type="text" name="nom_formule" id="name" value=<?= $data[$i-1]["nom_formule"] ?>>
                             </div>
                             <div>
                                 <h2>Sale</h2>
-                                <input type="number" name="sale" id="saleinput">
+                                <input type="number" name="sale" id="saleinput" value=<?= $data[$i-1]["sale"] ?>>
                             </div>
                             <div>
                                 <h2>OnlineSpace</h2>
-                                <input type="number" name="onlinespace" id="onlinespace">
+                                <input type="number" name="onlinespace" id="onlinespace" value=<?= $data[$i-1]["onlinespace"] ?>>
                             </div>
                             <div>
                                 <h2>Domain</h2>
-                                <input type="text" name="domain" id="domain">
+                                <input type="text" name="domain" id="domain" value=<?= $data[$i-1]["domain"] ?>>
                             </div>
                         </div>
                         <div class="updateDroite">
                             <div>
                                 <h2>Price</h2>
-                                <input type="number" name="price" id="price">
+                                <input type="number" name="prix" id="price" value=<?= $data[$i-1]["prix"] ?>>
                             </div>
                             <div>
                                 <h2>Bandwidth</h2>
-                                <input type="number" name="bandwidth" id="bandwidth">
+                                <input type="number" name="bandwidth" id="bandwidth" value=<?= $data[$i-1]["bandwidth"] ?>>
                             </div>
                             <div>
                                 <h2>Support</h2>
-                                <input type="text" name="support" id="support">
+                                <input type="text" name="support" id="support" value=<?= $data[$i-1]["support"] ?>>
                             </div>
                             <div>
                                 <h2>Hidden Fees</h2>
-                                <input type="text" name="hiddenFees" id="hiddenFees">
+                                <input type="text" name="hidden_fees" id="hiddenFees" value=<?= $data[$i-1]["hidden_fees"] ?>>
                             </div>
                         </div>
                     </div>
