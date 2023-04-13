@@ -48,4 +48,16 @@
             echo $b["bandwidth"];
         }
     }
+
+    /* Fonction pour obtenir l'espace en ligne d'une formule grâce a sont id */
+    function getOnlinespace(int $numeroFormule){
+        global $db;
+        $sqlQuery = "SELECT onlinespace FROM pricing WHERE id_formule = $numeroFormule";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        $onlinespace = $s->fetchAll();
+        foreach($onlinespace as $o){
+            echo $o["onlinespace"];
+        }
+    }
 ?>
