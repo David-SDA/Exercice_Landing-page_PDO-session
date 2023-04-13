@@ -1,3 +1,6 @@
+<?php
+    include_once("db-functions.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
