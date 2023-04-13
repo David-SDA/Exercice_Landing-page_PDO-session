@@ -13,7 +13,7 @@
     $formules = $statement->fetchAll();
     */
     
-    /* Fonction pour obtenir le nom d'une formule grâce a sont id */
+    /* Fonction pour obtenir le nom d'une formule grâce a son id */
     function getNom(int $numeroFormule){
         global $db;
         $sqlQuery = "SELECT nom_formule FROM pricing WHERE id_formule = $numeroFormule";
@@ -25,7 +25,7 @@
         }
     }
 
-    /* Fonction pour obtenir le prix d'une formule grâce a sont id */
+    /* Fonction pour obtenir le prix d'une formule grâce a son id */
     function getPrix(int $numeroFormule){
         global $db;
         $sqlQuery = "SELECT prix FROM pricing WHERE id_formule = $numeroFormule";
@@ -37,7 +37,7 @@
         }
     }
 
-    /* Fonction pour obtenir la bande passante d'une formule grâce a sont id */
+    /* Fonction pour obtenir la bande passante d'une formule grâce a son id */
     function getBandwidth(int $numeroFormule){
         global $db;
         $sqlQuery = "SELECT bandwidth FROM pricing WHERE id_formule = $numeroFormule";
@@ -49,7 +49,7 @@
         }
     }
 
-    /* Fonction pour obtenir l'espace en ligne d'une formule grâce a sont id */
+    /* Fonction pour obtenir l'espace en ligne d'une formule grâce a son id */
     function getOnlinespace(int $numeroFormule){
         global $db;
         $sqlQuery = "SELECT onlinespace FROM pricing WHERE id_formule = $numeroFormule";
@@ -61,7 +61,7 @@
         }
     }
 
-    /* Fonction pour savoir si le support est disponible dans une formule grâce a sont id */
+    /* Fonction pour savoir si le support est disponible dans une formule grâce a son id */
     function getSupport(int $numeroFormule){
         global $db;
         $sqlQuery = "SELECT support FROM pricing WHERE id_formule = $numeroFormule";
@@ -75,6 +75,18 @@
             else{
                 echo "Yes";
             }
+        }
+    }
+
+    /* Fonction pour obtenir le nombre de domaine d'une formule grâce a son id */
+    function getDomain(int $numeroFormule){
+        global $db;
+        $sqlQuery = "SELECT domain FROM pricing WHERE id_formule = $numeroFormule";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        $domain = $s->fetchAll();
+        foreach($domain as $d){
+            echo $d["domain"];
         }
     }
 ?>

@@ -320,7 +320,7 @@
                             <li><?php getBandwidth(1) ?>GB</li>
                             <li><?php getOnlinespace(1) ?>MB</li>
                             <li><?php getSupport(1) ?></li>
-                            <li>1</li>
+                            <li><?php getDomain(1) ?></li>
                             <li>No</li>
                         </ul>
                     </div>
@@ -348,7 +348,7 @@
                             <li><?php getBandwidth(2) ?>GB</li>
                             <li><?php getOnlinespace(2) ?>GB</li>
                             <li><?php getSupport(2) ?></li>
-                            <li>3</li>
+                            <li><?php getDomain(2) ?></li>
                             <li>No</li>
                         </ul>
                     </div>
@@ -373,7 +373,7 @@
                             <li><?php getBandwidth(3) ?>GB</li>
                             <li><?php getOnlinespace(3) ?>GB</li>
                             <li><?php getSupport(3) ?></li>
-                            <li>Unlimited</li>
+                            <li><?php getDomain(3) ?></li>
                             <li>No</li>
                         </ul>
                     </div>
