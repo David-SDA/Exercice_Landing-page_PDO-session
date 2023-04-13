@@ -767,6 +767,26 @@ footer{
 }
 
 /***************************************************************/
+/*              BOUTON DE LIEN VERS LA PAGE ADMIN              */
+/***************************************************************/
+
+/* Le bouton */
+#versAdmin{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 50%;
+    width: 3vw;
+    height: 3vw;
+    background-color: #24262a;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/***************************************************************/
 /*              STYLE UPDATE ADMIN                             */
 /***************************************************************/
 

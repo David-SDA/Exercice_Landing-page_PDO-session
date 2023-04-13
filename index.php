@@ -358,6 +358,7 @@
             </p>
         </footer>
         <button id="revenirEnHaut"><i class="fa-solid fa-arrow-up"></i></button>
+        <a href="admin.php" id="versAdmin"><i class="fa-solid fa-gear"></i></a>
     <script src="script.js"></script>
     </body>
 </html>
