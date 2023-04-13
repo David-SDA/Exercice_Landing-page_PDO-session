@@ -312,9 +312,9 @@
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><i class="fa-regular fa-circle-xmark"></i> Support</li>
+                            <li><?php getSupportLogo(1) ?>Support</li>
                             <li><i class="fa-regular fa-circle-check"></i> Domain</li>
-                            <li><i class="fa-regular fa-circle-xmark"></i> Hidden Fees</li>
+                            <li><?php getHiddenFeesLogo(1) ?>Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
                             <li><?php getBandwidth(1) ?>GB</li>
@@ -340,9 +340,9 @@
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Support</li>
+                            <li><?php getSupportLogo(2) ?>Support</li>
                             <li><i class="fa-regular fa-circle-check"></i> Domain</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Hidden Fees</li>
+                            <li><?php getHiddenFeesLogo(2) ?>Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
                             <li><?php getBandwidth(2) ?>GB</li>
@@ -365,9 +365,9 @@
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Support</li>
+                            <li><?php getSupportLogo(3) ?>Support</li>
                             <li><i class="fa-regular fa-circle-check"></i> Domain</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Hidden Fees</li>
+                            <li><?php getHiddenFeesLogo(3) ?>Hidden Fees</li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
                             <li><?php getBandwidth(3) ?>GB</li>

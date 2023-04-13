@@ -61,6 +61,23 @@
         }
     }
 
+    /* Fonction pour obtenir l'affichage du logo check et cross du support d'une formule */
+    function getSupportLogo(int $numeroFormule){
+        global $db;
+        $sqlQuery = "SELECT support FROM pricing WHERE id_formule = $numeroFormule";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        $support = $s->fetchAll();
+        foreach($support as $supp){
+            if($supp["support"] == 0){
+                echo "<i class='fa-regular fa-circle-xmark'></i> ";
+            }
+            else{
+                echo "<i class='fa-regular fa-circle-check'></i> ";
+            }
+        }
+    }
+
     /* Fonction pour savoir si le support est disponible dans une formule grâce a son id */
     function getSupport(int $numeroFormule){
         global $db;
@@ -87,6 +104,23 @@
         $domain = $s->fetchAll();
         foreach($domain as $d){
             echo $d["domain"];
+        }
+    }
+
+    /* Fonction pour obtenir l'affichage du logo check et cross des frais cachée d'une formule */
+    function getHiddenFeesLogo(int $numeroFormule){
+        global $db;
+        $sqlQuery = "SELECT hidden_fees FROM pricing WHERE id_formule = $numeroFormule";
+        $s = $db->prepare($sqlQuery);
+        $s->execute();
+        $hiddenFees = $s->fetchAll();
+        foreach($hiddenFees as $hf){
+            if($hf["hidden_fees"] == 0){
+                echo "<i class='fa-regular fa-circle-check'></i> ";
+            }
+            else{
+                echo "<i class='fa-regular fa-circle-xmark'></i> ";
+            }
         }
     }
 
