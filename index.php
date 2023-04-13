@@ -383,10 +383,10 @@
 
         <footer>
             <ul id="liensReseau">
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href="#"><button><i class="fa-brands fa-facebook-f"></i></button></a></li>
+                <li><a href="#"><button><i class="fa-brands fa-twitter"></i></button></a></li>
+                <li><a href="#"><button><i class="fa-brands fa-linkedin"></i></button></a></li>
+                <li><a href="#"><button><i class="fa-brands fa-google-plus-g"></i></button></a></li>
             </ul>
             <p id="liens">
                 <a href="#">Terms & Condition</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
