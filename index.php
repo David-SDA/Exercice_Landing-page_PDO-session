@@ -378,7 +378,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="db-functions.php?action=join&index=<?= $i ?>">
+                    <a href="db-functions.php?action=join&index=<?= $i+1 ?>">
                         <button>Join Now</button>
                     </a>
                 </article>

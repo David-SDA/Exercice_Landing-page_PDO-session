@@ -719,6 +719,7 @@ footer{
     width: 100%;
     height: 5vh;
     color: #b3b3b3;
+    padding-top: 1.3vh;
 }
 #liensReseau button{
     background-color: #24262a;
