@@ -307,8 +307,8 @@
                 <?php 
                     $data = getAll();
                     for ($i = 1; $i<4; $i++){
-                        $onlineSpace = (getOnlinespace($i) >= 1000) ? 'GB' : 'MB';
-                        $onlineSpaceValue = (getOnlinespace($i) >= 1000) ? getOnlinespace($i)/1000 : getOnlinespace($i);
+                        $onlineSpace = ($data[$i-1]["onlinespace"] >= 1000) ? 'GB' : 'MB';
+                        $onlineSpaceValue = ($data[$i-1]["onlinespace"] >= 1000) ? $data[$i-1]["onlinespace"]/1000 : $data[$i-1]["onlinespace"];
                 ?>
                 <article class="offre <?php if($data[$i-1]["sale"] != 0){echo "selectionne";} ?>">
                     <?php

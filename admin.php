@@ -72,6 +72,6 @@
                 ?>   
             </article>
         </section>
-        <a href="index.php" id="versAdmin"><i class="fa-solid fa-gear"></i></a>
+        <a href="index.php#pricing" id="versAdmin"><i class="fa-solid fa-gear"></i></a>
     </body>
 </html>
