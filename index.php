@@ -46,7 +46,7 @@
                         different industries and the design achieves a 
                         great balance between purpose & presentation
                     </p>
-                    <form action="">
+                    <form action="db-functions.php?action=addEmail" method="post">
                         <input type="text" name="email" id="email" placeholder="Enter your email">
                         <input type="submit" value="SUBSCRIBE" id="subscribe">
                     </form>

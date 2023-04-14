@@ -179,6 +179,7 @@ session_start();
                 $statement->execute();
                 header("Location:admin.php");
                 break;
+
             case "join" :
                 global $db;
                 $requete = "UPDATE pricing SET quantite=quantite+1 WHERE id_formule = " . $_GET["index"] ;
@@ -187,6 +188,14 @@ session_start();
                 $donnee = getAll();
                 $_SESSION['message'] = "You have joined the ". $donnee[$_GET["index"]-1]["nom_formule"] . " formula !";
                 header("Location:index.php#pricing");
+                break;
+            
+            case "addEmail" :
+                global $db;
+                $requete = "INSERT INTO email (email) VALUES ('". $_POST["email"] ."')";
+                $statement = $db->prepare($requete);
+                $statement->execute();
+                header("Location:index.php");
                 break;
         }
     }
