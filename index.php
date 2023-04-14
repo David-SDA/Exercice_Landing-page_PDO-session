@@ -333,7 +333,7 @@
                             <li><?php getHiddenFees($i) ?></li>
                         </ul>
                     </div>
-                    <a href="#">
+                    <a href="db-functions.php?action=join&index=<?= $i ?>">
                         <button>Join Now</button>
                     </a>
                 </article>

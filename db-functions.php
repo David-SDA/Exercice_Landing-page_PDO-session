@@ -161,11 +161,17 @@
             /* action d'update de la bdd sur les offres */
             case "update" :
                 global $db;
-                var_dump($_POST["nom_formule"]);
                 $requete = "UPDATE pricing SET nom_formule = '" . $_POST["nom_formule"] . "', prix = " . $_POST["prix"] . ", sale = " . $_POST["sale"] . ", bandwidth = " . $_POST["bandwidth"] . ", onlinespace = " . $_POST["onlinespace"] . ", support = " . $_POST["support"] . ", domain = '" . $_POST["domain"] . "', hidden_fees = " . $_POST["hidden_fees"] ." WHERE id_formule = " . $_GET["index"];
                 $statement = $db->prepare($requete);
                 $statement->execute();
                 header("Location:admin.php");
+                break;
+            case "join" :
+                global $db;
+                $requete = "UPDATE pricing SET quantite=quantite+1 WHERE id_formule = " . $_GET["index"] ;
+                $statement = $db->prepare($requete);
+                $statement->execute();
+                header("Location:index.php");
                 break;
         }
     }
