@@ -311,27 +311,71 @@
                         $onlineSpaceValue = (getOnlinespace($i) >= 1000) ? getOnlinespace($i)/1000 : getOnlinespace($i);
                 ?>
                 <article class="offre <?php if($data[$i-1]["sale"] != 0){echo "selectionne";} ?>">
-                    <?php getSale($i) ?>
-                    <h2><?php getNom($i) ?></h2>
+                    <?php
+                        if($data[$i-1]["sale"] != 0){
+                            echo "<p id='sale'>" . $data[$i-1]["sale"] . "% sale</p>";
+                        }
+                    ?>
+                    <h2><?= $data[$i-1]["nom_formule"] ?></h2>
                     <p>
-                        <span class="dollar">$</span><span class="prix"><?php getPrix($i) ?></span><span class="parMois">/month</span>
+                        <span class="dollar">$</span><span class="prix"><?= $data[$i-1]["prix"] ?></span><span class="parMois">/month</span>
                     </p>
                     <div class="fonctionnalite">
                         <ul class="fonctionnaliteGauche">
                             <li><i class="fa-regular fa-circle-check"></i> Bandwidth</li>
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
-                            <li><?php getSupportLogo($i) ?>Support</li>
+                            <li>
+                                <?php
+                                    if($data[$i-1]["support"] == 0)
+                                    {
+                                        echo "<i class='fa-regular fa-circle-xmark'></i> ";
+                                    }
+                                    else{
+                                        echo "<i class='fa-regular fa-circle-check'></i> ";
+                                    }
+                                ?>
+                                Support
+                            </li>
                             <li><i class="fa-regular fa-circle-check"></i> Domain</li>
-                            <li><?php getHiddenFeesLogo($i) ?>Hidden Fees</li>
+                            <li>
+                                <?php
+                                    if($data[$i-1]["hidden_fees"] == 0)
+                                    {
+                                        echo "<i class='fa-regular fa-circle-check'></i> ";
+                                    }
+                                    else{
+                                        echo "<i class='fa-regular fa-circle-xmark'></i> ";
+                                    }
+                                ?>
+                                Hidden Fees
+                            </li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
-                            <li><?php getBandwidth($i) ?>GB</li>
-                            <li><?= $onlineSpaceValue ?>
-                            <?= $onlineSpace ?>
-                        </li>
-                            <li><?php getSupport($i) ?></li>
-                            <li><?php getDomain($i) ?></li>
-                            <li><?php getHiddenFees($i) ?></li>
+                            <li><?= $data[$i-1]["bandwidth"] ?>GB</li>
+                            <li><?= $onlineSpaceValue ?><?= $onlineSpace ?></li>
+                            <li>
+                                <?php 
+                                    if($data[$i-1]["support"] == 0)
+                                    {
+                                        echo "No";
+                                    }
+                                    else{
+                                        echo "Yes";
+                                    }
+                                ?>
+                            </li>
+                            <li><?= $data[$i-1]["domain"] ?></li>
+                            <li>
+                                <?php
+                                    if($data[$i-1]["hidden_fees"] == 0)
+                                    {
+                                        echo "No";
+                                    }
+                                    else{
+                                        echo "Yes";
+                                    }
+                                ?>
+                            </li>
                         </ul>
                     </div>
                     <a href="db-functions.php?action=join&index=<?= $i ?>">
