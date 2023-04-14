@@ -16,6 +16,18 @@ session_start();
         return $s->fetchAll();
     }
 
+    /* Fonction pour obtenir l'affichage de la confirmation de l'action de update d'une formule par l'admin */
+    function getAffichageConfirmationAdmin(){
+        $result = "";
+        /* Si on a une variable de session pour le message de confirmation, ou bien si il n'est pas vide */
+        if( isset($_SESSION['messageAdmin']) || !empty($_SESSION['messageAdmin']) ){
+            $result .= $_SESSION['messageAdmin']; // On le recupère pour le message
+            unset($_SESSION['messageAdmin']);
+            return $result;
+        }
+        return false;
+    }
+
     /* Fonction pour obtenir l'affichage de la confirmation de l'action de rejoindre une formule */
     function getAffichageConfirmation(){
         $result = "";
@@ -49,6 +61,7 @@ session_start();
                 $requete = "UPDATE pricing SET nom_formule = '" . $_POST["nom_formule"] . "', prix = " . $_POST["prix"] . ", sale = " . $_POST["sale"] . ", bandwidth = " . $_POST["bandwidth"] . ", onlinespace = " . $_POST["onlinespace"] . ", support = " . $_POST["support"] . ", domain = '" . $_POST["domain"] . "', hidden_fees = " . $_POST["hidden_fees"] ." WHERE id_formule = " . $_GET["index"];
                 $statement = $db->prepare($requete);
                 $statement->execute();
+                $_SESSION['messageAdmin'] = "Formula " . $_POST['nom_formule'] . " has been updated !";
                 header("Location:admin.php");
                 break;
             

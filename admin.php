@@ -66,12 +66,14 @@
                         </div>
                     </div>
                     <input type="submit" value="Update">
-                </form> 
+                </form>
+                <div class="messageConfirmation"><?= getAffichageConfirmationAdmin() ?></div>
                 <?php
                     }
                 ?>   
             </article>
         </section>
         <a href="index.php#pricing" id="versAdmin"><i class="fa-solid fa-gear"></i></a>
+    <script src="script.js"></script>
     </body>
 </html>
