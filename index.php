@@ -47,7 +47,7 @@
                         great balance between purpose & presentation
                     </p>
                     <form action="db-functions.php?action=addEmail" method="post">
-                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
                         <input type="submit" value="SUBSCRIBE" id="subscribe">
                     </form>
                     <div class="messageConfirmationEmail"><?= getAffichageConfirmationEmail() ?></div>
