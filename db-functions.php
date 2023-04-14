@@ -168,6 +168,18 @@ session_start();
         return false;
     }
 
+    /* Fonction pour obtenir l'affichage de la confirmation de l'action d'ajout d'email */
+    function getAffichageConfirmationEmail(){
+        $result = "";
+        /* Si on a une variable de session pour le message de confirmation, ou bien si il n'est pas vide */
+        if( isset($_SESSION['messageEmail']) || !empty($_SESSION['messageEmail']) ){
+            $result .= $_SESSION['messageEmail']; // On le recupère pour le message
+            unset($_SESSION['messageEmail']);
+            return $result;
+        }
+        return false;
+    }
+
     /* Switch sur les actions */
     if(isset($_GET["action"])){
         switch($_GET["action"]){
@@ -195,6 +207,7 @@ session_start();
                 $requete = "INSERT INTO email (email) VALUES ('". $_POST["email"] ."')";
                 $statement = $db->prepare($requete);
                 $statement->execute();
+                $_SESSION['messageEmail'] = "L'email " . $_POST["email"] . " a été ajouté !";
                 header("Location:index.php");
                 break;
         }
