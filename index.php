@@ -390,10 +390,10 @@
         </section>
         <footer>
             <ul id="liensReseau">
-                <li><a href="#"><button><i class="fa-brands fa-facebook-f"></i></button></a></li>
-                <li><a href="#"><button><i class="fa-brands fa-twitter"></i></button></a></li>
-                <li><a href="#"><button><i class="fa-brands fa-linkedin"></i></button></a></li>
-                <li><a href="#"><button><i class="fa-brands fa-google-plus-g"></i></button></a></li>
+                <li><button><a href="#"><i class="fa-brands fa-facebook-f"></i></a></button></li>
+                <li><button><a href="#"><i class="fa-brands fa-twitter"></i></a></button></li>
+                <li><button><a href="#"><i class="fa-brands fa-linkedin"></i></a></button></li>
+                <li><button><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></button></li>
             </ul>
             <p id="liens">
                 <a href="#">Terms & Condition</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
