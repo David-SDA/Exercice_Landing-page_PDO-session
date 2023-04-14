@@ -16,16 +16,6 @@ session_start();
         return $s->fetchAll();
     }
 
-    /* Fonction pour obtenir l'espace en ligne d'une formule grâce a son id */
-    function getOnlinespace(int $numeroFormule){
-        global $db;
-        $sqlQuery = "SELECT onlinespace FROM pricing WHERE id_formule = $numeroFormule";
-        $s = $db->prepare($sqlQuery);
-        $s->execute();
-        $onlinespace = $s->fetch();
-        return $onlinespace['onlinespace'];
-    }
-
     /* Fonction pour obtenir l'affichage de la confirmation de l'action de rejoindre une formule */
     function getAffichageConfirmation(){
         $result = "";
