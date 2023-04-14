@@ -1,30 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 2em;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-input{
+input {
     font-family: 'Poppins', sans-serif;
 }
 
-button{
+button {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -33,26 +33,30 @@ button{
 /***************************************************************/
 
 /* Les listes de la première section */
-.listeNavigation{
+.listeNavigation {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
-.listeNavigation li{
+
+.listeNavigation li {
     margin: 0 0.6vw;
 }
-.listeNavigation a{
+
+.listeNavigation a {
     color: #fff;
     transition: color 0.5s;
 }
-.listeNavigation a:hover, .listeNavigation a:active{
+
+.listeNavigation a:hover,
+.listeNavigation a:active {
     color: #c7d3ca;
 }
 
 /* La première section */
-#accueil{
+#accueil {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -62,7 +66,7 @@ button{
 }
 
 /* La barre de navigation dans la première section */
-#barreNavigation{
+#barreNavigation {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -73,7 +77,7 @@ button{
 }
 
 /* Le contenu au centre de la première section */
-#articleAccueil{
+#articleAccueil {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -83,7 +87,7 @@ button{
 }
 
 /* Le contenu à gauche de l'image */
-#articleAccueilGauche{
+#articleAccueilGauche {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -91,23 +95,27 @@ button{
     align-items: center;
     width: 25vw;
 }
-#articleAccueilGauche > *{
+
+#articleAccueilGauche>* {
     margin-bottom: 5vh;
 }
-#articleAccueilGauche h2{
+
+#articleAccueilGauche h2 {
     line-height: 1.3em;
     font-size: 3.5em;
 }
-#articleAccueilGauche p{
+
+#articleAccueilGauche p {
     font-size: 1.15em;
 }
-#articleAccueilGauche form{
+
+#articleAccueilGauche form {
     position: relative;
     width: 100%;
 }
 
 /* L'input pour l'email */
-#email{
+#email {
     padding: 10px;
     font-size: 1em;
     width: 100%;
@@ -117,7 +125,7 @@ button{
 }
 
 /* L'input pour submit */
-#subscribe{
+#subscribe {
     background-color: #1294b8;
     color: #fff;
     width: 25%;
@@ -129,13 +137,14 @@ button{
     right: 1%;
     transition: background-color 1s;
 }
-#subscribe:hover{
+
+#subscribe:hover {
     cursor: pointer;
     background-color: rgb(128, 187, 238);
 }
 
 /* L'image d'illustration */
-#imageOrdinateur{
+#imageOrdinateur {
     width: 40vw;
     height: auto;
 }
@@ -145,7 +154,7 @@ button{
 /***************************************************************/
 
 /* Une carte */
-.carte{
+.carte {
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
     display: flex;
     flex-direction: column;
@@ -160,26 +169,30 @@ button{
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     transition: transform 0.5s;
 }
-.carte h2{
+
+.carte h2 {
     font-size: 4em;
     margin-bottom: 2vh;
 }
-.carte h3{
+
+.carte h3 {
     font-size: 2em;
     margin-bottom: 1vh;
 }
-.carte:hover{
+
+.carte:hover {
     transform: translateY(-1vh);
 }
 
 /* La deuxième section */
-#features{
+#features {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
 }
-#features header{
+
+#features header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,15 +200,17 @@ button{
     text-align: center;
     padding-top: 8vh;
 }
-#features header h1{
+
+#features header h1 {
     padding-bottom: 10px;
 }
-#features header p{
+
+#features header p {
     color: #b3b3b3;
 }
 
 /* Le groupe de cartes */
-#cartes{
+#cartes {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -210,25 +225,29 @@ button{
 /***************************************************************/
 
 /* Le rectangle avec une personne et une donnée */
-.personne{
+.personne {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 5vh 2.5vw 10vh 2.5vw;
 }
-.personne p{
+
+.personne p {
     margin-bottom: 5vh;
     color: #b3b3b3;
 }
-.personne h2{
+
+.personne h2 {
     font-weight: 500;
 }
-.personne h3{
+
+.personne h3 {
     font-weight: 400;
     margin-top: 1vh;
 }
-.personne figure{
+
+.personne figure {
     position: relative;
     width: 15vw;
     height: 15vw;
@@ -237,26 +256,28 @@ button{
 }
 
 /* L'image d'une personne */
-.imagePersonne{
+.imagePersonne {
     width: 15vw;
     height: 15vw;
     border-radius: 50%;
     filter: grayscale();
     transition: all 0.5s ease-in-out;
 }
-.imagePersonne:hover{
+
+.imagePersonne:hover {
     filter: none;
     transform: scale(1.1);
 }
 
 /* La troisième section */
-#team{
+#team {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
 }
-#team header{
+
+#team header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,16 +285,18 @@ button{
     text-align: center;
     padding-top: 8vh;
 }
-#team header h1{
+
+#team header h1 {
     padding-bottom: 10px;
 }
-#team header p{
+
+#team header p {
     color: #b3b3b3;
     width: 35vw;
 }
 
 /* Le groupe de personnes */
-#personnes{
+#personnes {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -281,24 +304,26 @@ button{
 }
 
 /* La partie qui rassemble image est réseaux sociaux */
-#imageReseau{
+#imageReseau {
     position: relative;
     width: 15vw;
     height: 15vw;
     border-radius: 50%;
     overflow: hidden;
 }
-#imageReseau:hover #personneReseau{
+
+#imageReseau:hover #personneReseau {
     transform: translateX(2.3vw) translateY(10vh);
     opacity: 1;
 }
-#imageReseau:hover .imagePersonne{
+
+#imageReseau:hover .imagePersonne {
     filter: none;
     transform: scale(1.1);
 }
 
 /* Les réseaux d'une personne */
-#personneReseau{
+#personneReseau {
     position: absolute;
     top: -1vh;
     left: -1.5vw;
@@ -306,12 +331,14 @@ button{
     opacity: 0;
     transition: transform 0.8s, opacity 0.8s;
 }
-#personneReseau li{
+
+#personneReseau li {
     background-color: #fff;
     padding: 0.5vh 0.45vw;
     border-radius: 50%;
 }
-#personneReseau a{
+
+#personneReseau a {
     color: #000;
 }
 
@@ -320,10 +347,11 @@ button{
 /***************************************************************/
 
 /* La quatrièeme section */
-#parallax{
+#parallax {
     position: relative;
 }
-#parallax article{
+
+#parallax article {
     color: #fff;
     position: absolute;
     top: 0;
@@ -338,18 +366,21 @@ button{
     align-items: center;
     justify-content: space-between;
 }
-#parallax h1{
+
+#parallax h1 {
     font-weight: 500;
     font-size: 2.5em;
 }
-#parallax p{
+
+#parallax p {
     color: #d7d5d5;
     text-align: center;
     font-weight: 400;
     font-size: 1.2em;
     margin-bottom: 2vh;
 }
-#parallax button{
+
+#parallax button {
     background-color: transparent;
     color: #fff;
     font-size: 1.2em;
@@ -361,21 +392,22 @@ button{
     cursor: pointer;
     transition: all 1s;
 }
-#parallax button:hover{
+
+#parallax button:hover {
     color: #000;
     background-color: #fff;
     transform: translateY(-1vh);
 }
 
 /* L'image de l'effet parallax */
-#imageParallax{
+#imageParallax {
     background-image: url(img/parallax.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(0.5) saturate(0.7);
-    height: 60vh;  
+    height: 60vh;
 }
 
 /***************************************************************/
@@ -383,7 +415,7 @@ button{
 /***************************************************************/
 
 /* Un des sujets affichés */
-.sujetBlog{
+.sujetBlog {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -393,40 +425,46 @@ button{
     margin: 0 2vw;
     overflow: hidden;
 }
-.sujetBlog figure{
+
+.sujetBlog figure {
     position: relative;
 }
-.sujetBlog p{
+
+.sujetBlog p {
     color: #000;
     font-weight: 200;
     margin-bottom: 1vh;
 }
-.sujetBlog h2{
+
+.sujetBlog h2 {
     font-size: 1.5em;
     font-weight: 500;
     margin: 1vh 0;
 }
-.sujetBlog a{
+
+.sujetBlog a {
     color: #1294b8;
     font-size: 1.1em;
 }
-.sujetBlog figure:hover > .imageBlog img{
+
+.sujetBlog figure:hover>.imageBlog img {
     cursor: pointer;
     filter: brightness(0.6);
 }
-.sujetBlog figure:hover > .infoSujetImage{
+
+.sujetBlog figure:hover>.infoSujetImage {
     opacity: 1;
 }
 
 /* L'image d'un sujet */
-.imageBlog img{
+.imageBlog img {
     width: 23vw;
     height: auto;
     transition: filter 0.5s;
 }
 
 /* Les infos du créateur du sujet */
-.infoSujetImage{
+.infoSujetImage {
     position: absolute;
     top: 12%;
     left: 8.5%;
@@ -434,19 +472,21 @@ button{
     opacity: 0;
     transition: opacity 0.5s;
 }
-.infoSujetImage p{
+
+.infoSujetImage p {
     color: #fff;
 }
 
 /* La cinquième section */
-#blog{
+#blog {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     width: 100%;
 }
-#blog header{
+
+#blog header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -454,15 +494,17 @@ button{
     text-align: center;
     padding-top: 7vh;
 }
-#blog header h1{
+
+#blog header h1 {
     padding-bottom: 1vh;
 }
-#blog header p{
+
+#blog header p {
     color: #b3b3b3;
 }
 
 /* Les différents sujets du blog qui sont affichés */
-#sujetsBlog{
+#sujetsBlog {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -477,12 +519,12 @@ button{
 /***************************************************************/
 
 /* Une boîte qui contient une statistique */
-.statistique{
+.statistique {
     margin-right: 2vw;
 }
 
 /* La sixième section */
-#stats{
+#stats {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -490,19 +532,23 @@ button{
     height: 80vh;
     width: 100%;
 }
-#stats article{
+
+#stats article {
     width: 27vw;
     height: auto;
 }
-#stats h1{
+
+#stats h1 {
     font-size: 1.5em;
     margin-bottom: 4vh;
 }
-#stats p{
+
+#stats p {
     color: #b3b3b3;
     margin-bottom: 2vh;
 }
-#stats button{
+
+#stats button {
     background-color: #3f8efd;
     color: #fff;
     font-size: 1.2em;
@@ -514,23 +560,26 @@ button{
     cursor: pointer;
     transition: all 0.5s;
 }
-#stats button:hover{
+
+#stats button:hover {
     transform: translateY(-1vh);
 }
-#stats img{
+
+#stats img {
     width: 40vw;
     height: auto;
 }
 
 /* La boîte qui rassemble les statistiques */
-#statistiques{
+#statistiques {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 3vh;
 }
-#statistiques h2{
+
+#statistiques h2 {
     font-weight: 400;
 }
 
@@ -539,7 +588,7 @@ button{
 /***************************************************************/
 
 /* Une offre */
-.offre{
+.offre {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -551,19 +600,23 @@ button{
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.offre h2{
+
+.offre h2 {
     font-size: 1.3em;
     align-self: center;
 }
-.offre p{
+
+.offre p {
     align-self: center;
     position: relative;
     margin-left: 20px;
 }
-.offre a{
-   width: 100%;
+
+.offre a {
+    width: 100%;
 }
-.offre button{
+
+.offre button {
     width: 100%;
     height: 6vh;
     border: 2px solid #3f8efd;
@@ -576,21 +629,22 @@ button{
 }
 
 /* Une offre sélectionné/pré-sélectionné */
-.selectionne{
+.selectionne {
     transform: translateY(-2vh);
 }
-.selectionne button{
+
+.selectionne button {
     background-color: #3f8efd;
     color: #fff;
 }
 
 /* Le nombre représentant le prix */
-.prix{
+.prix {
     font-size: 5em;
 }
 
 /* Le symbole dollar */
-.dollar{
+.dollar {
     font-size: 2.5em;
     position: absolute;
     top: 1.8vh;
@@ -598,18 +652,19 @@ button{
 }
 
 /* Texte "/month" */
-.parMois{
+.parMois {
     color: #b3b3b3;
     font-weight: 500;
 }
 
 /* Le dollar et le prix */
-.dollar, .prix{
+.dollar,
+.prix {
     color: #3f8efd;
 }
 
 /* Le détail des fonctionnalités */
-.fonctionnalite{
+.fonctionnalite {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -617,41 +672,43 @@ button{
 }
 
 /* La liste des fonctionnalité à gauche */
-.fonctionnaliteGauche{
+.fonctionnaliteGauche {
     align-self: flex-start;
 }
 
 /* Le symbole valide */
-.fa-circle-check{
+.fa-circle-check {
     color: green;
 }
 
 /* Le symbole non-valide */
-.fa-circle-xmark{
+.fa-circle-xmark {
     color: red;
 }
 
 /* La liste des fonctionnalité à droite */
-.fonctionnaliteDroite{
+.fonctionnaliteDroite {
     align-self: flex-end;
     text-align: end;
 }
 
 /* Les deux listes */
-.fonctionnaliteGauche li, .fonctionnaliteDroite li{
+.fonctionnaliteGauche li,
+.fonctionnaliteDroite li {
     padding-top: 2vh;
     font-size: 1.1em;
 }
 
 /* La septième section */
-#pricing{
+#pricing {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     background-color: #eeeeee;
 }
-#pricing header{
+
+#pricing header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -659,22 +716,24 @@ button{
     padding-top: 5vh;
     text-align: center;
 }
-#pricing header h1{
+
+#pricing header h1 {
     padding-bottom: 1vh;
 }
-#pricing header p{
+
+#pricing header p {
     color: #b3b3b3;
 }
 
 /* La boîte qui contient toutes les offres */
-#offres{
+#offres {
     display: flex;
     flex-direction: row;
     margin-top: 10vh;
 }
 
 /* Partie d'affichage de la réduction */
-#sale{
+#sale {
     position: absolute;
     top: 0;
     right: 0;
@@ -694,7 +753,7 @@ button{
 /***************************************************************/
 
 /* Le footer */
-footer{
+footer {
     background-color: #24262a;
     display: flex;
     flex-direction: column;
@@ -705,23 +764,26 @@ footer{
 }
 
 /* Les liens du haut */
-#liensReseau{
+#liensReseau {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-#liensReseau li{
+
+#liensReseau li {
     margin-bottom: 2vh;
 }
-#liensReseau a{
+
+#liensReseau a {
     display: block;
     width: 100%;
     height: 5vh;
     color: #b3b3b3;
     padding-top: 1.3vh;
 }
-#liensReseau button{
+
+#liensReseau button {
     background-color: #24262a;
     color: #b3b3b3;
     width: 5vh;
@@ -733,17 +795,18 @@ footer{
 }
 
 /* Les liens du milieu */
-#liens{
+#liens {
     color: #b3b3b3;
     margin: 1vh 0;
 }
-#liens a{
+
+#liens a {
     color: #b3b3b3;
     margin: 0 1vw;
 }
 
 /* Le texte du bas */
-#bas{
+#bas {
     color: #b3b3b3;
     margin-top: 1vh;
 }
@@ -753,7 +816,7 @@ footer{
 /***************************************************************/
 
 /* Le bouton */
-#revenirEnHaut{
+#revenirEnHaut {
     position: fixed;
     right: 2vw;
     bottom: 2vh;
@@ -772,7 +835,7 @@ footer{
 /***************************************************************/
 
 /* Le bouton */
-#versAdmin{
+#versAdmin {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -792,7 +855,7 @@ footer{
 /***************************************************************/
 
 /* La boite qui contient toute les offres à update */
-.offresUpdate{
+.offresUpdate {
     display: flex;
     flex-direction: column;
     margin: 0 1vw;
@@ -803,7 +866,8 @@ footer{
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.offresUpdate input[type=submit]{
+
+.offresUpdate input[type=submit] {
     width: 100%;
     height: 6vh;
     border: none;
@@ -813,31 +877,34 @@ footer{
 }
 
 /* Une offre à update */
-.update{
+.update {
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
 }
-.update input{
+
+.update input {
     width: 10vw;
     height: 4vh;
     padding: 1vh 1vw;
 }
 
 /* Les élements à droite et à gauche à update */
-.updateGauche div, .updateDroite div{
+.updateGauche div,
+.updateDroite div {
     margin-bottom: 2vh;
 }
 
 /* La section qui représente la page */
-#updates{
+#updates {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
 }
-#updates header{
+
+#updates header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -845,13 +912,14 @@ footer{
     padding-top: 5vh;
     text-align: center;
 }
-#updates header h1{
+
+#updates header h1 {
     padding-bottom: 1vh;
     color: #3f8efd;
 }
 
 /* La boîte qui contient toutes les offres */
-#boiteUpdate{
+#boiteUpdate {
     display: flex;
     flex-direction: row;
     margin-top: 10vh;
@@ -862,10 +930,11 @@ footer{
 /***************************************************************/
 
 /* Les messages de confirmations */
-.messageConfirmation, .messageConfirmationEmail{
+.messageConfirmation,
+.messageConfirmationEmail {
     display: block;
     z-index: 1;
-    background-color: #008000;
+    background-color: #71f871;
     color: #fff;
     position: fixed;
     top: 10vh;
@@ -875,6 +944,8 @@ footer{
     border-radius: 5px;
     transition: all 2s;
 }
-.messageConfirmation.afficher, .messageConfirmationEmail.afficher{
+
+.messageConfirmation.afficher,
+.messageConfirmationEmail.afficher {
     opacity: 1;
 }
