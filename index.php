@@ -50,7 +50,7 @@
                         <input type="email" name="email" id="email" placeholder="Enter your email">
                         <input type="submit" value="SUBSCRIBE" id="subscribe">
                     </form>
-                    <div class="messageConfirmation"><?= getAffichageConfirmationEmail() ?></div>
+                    <div class="messageConfirmationEmail"><?= getAffichageConfirmationEmail() ?></div>
                 </article>
                 <aside>
                     <figure>

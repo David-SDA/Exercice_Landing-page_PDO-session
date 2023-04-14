@@ -861,7 +861,7 @@ footer{
 /***************************************************************/
 
 /* Les messages de confirmations */
-.messageConfirmation{
+.messageConfirmation, .messageConfirmationEmail{
     display: block;
     z-index: 1;
     background-color: #008000;
@@ -874,6 +874,6 @@ footer{
     border-radius: 5px;
     transition: all 2s;
 }
-.messageConfirmation.afficher{
+.messageConfirmation.afficher, .messageConfirmationEmail.afficher{
     opacity: 1;
 }
