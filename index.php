@@ -337,12 +337,12 @@
                         <button>Join Now</button>
                     </a>
                 </article>
+                <div class="messageConfirmation"><?= getAffichageConfirmation() ?></div>
                 <?php
                     }  
                 ?>
             </article>
         </section>
-
         <footer>
             <ul id="liensReseau">
                 <li><a href="#"><button><i class="fa-brands fa-facebook-f"></i></button></a></li>
