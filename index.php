@@ -306,19 +306,19 @@
             <article id="offres">
                 <?php 
                     $data = getAll();
-                    for ($i = 1; $i<4; $i++){
-                        $onlineSpace = ($data[$i-1]["onlinespace"] >= 1000) ? 'GB' : 'MB';
-                        $onlineSpaceValue = ($data[$i-1]["onlinespace"] >= 1000) ? $data[$i-1]["onlinespace"]/1000 : $data[$i-1]["onlinespace"];
+                    for ($i = 0; $i<3; $i++){
+                        $onlineSpace = ($data[$i]["onlinespace"] >= 1000) ? 'GB' : 'MB';
+                        $onlineSpaceValue = ($data[$i]["onlinespace"] >= 1000) ? $data[$i]["onlinespace"]/1000 : $data[$i]["onlinespace"];
                 ?>
-                <article class="offre <?php if($data[$i-1]["sale"] != 0){echo "selectionne";} ?>">
+                <article class="offre <?php if($data[$i]["sale"] != 0){echo "selectionne";} ?>">
                     <?php
-                        if($data[$i-1]["sale"] != 0){
-                            echo "<p id='sale'>" . $data[$i-1]["sale"] . "% sale</p>";
+                        if($data[$i]["sale"] != 0){
+                            echo "<p id='sale'>" . $data[$i]["sale"] . "% sale</p>";
                         }
                     ?>
-                    <h2><?= $data[$i-1]["nom_formule"] ?></h2>
+                    <h2><?= $data[$i]["nom_formule"] ?></h2>
                     <p>
-                        <span class="dollar">$</span><span class="prix"><?= $data[$i-1]["prix"] ?></span><span class="parMois">/month</span>
+                        <span class="dollar">$</span><span class="prix"><?= $data[$i]["prix"] ?></span><span class="parMois">/month</span>
                     </p>
                     <div class="fonctionnalite">
                         <ul class="fonctionnaliteGauche">
@@ -326,7 +326,7 @@
                             <li><i class="fa-regular fa-circle-check"></i> Onlinespace</li>
                             <li>
                                 <?php
-                                    if($data[$i-1]["support"] == 0)
+                                    if($data[$i]["support"] == 0)
                                     {
                                         echo "<i class='fa-regular fa-circle-xmark'></i> ";
                                     }
@@ -339,7 +339,7 @@
                             <li><i class="fa-regular fa-circle-check"></i> Domain</li>
                             <li>
                                 <?php
-                                    if($data[$i-1]["hidden_fees"] == 0)
+                                    if($data[$i]["hidden_fees"] == 0)
                                     {
                                         echo "<i class='fa-regular fa-circle-check'></i> ";
                                     }
@@ -351,11 +351,11 @@
                             </li>
                         </ul>
                         <ul class="fonctionnaliteDroite">
-                            <li><?= $data[$i-1]["bandwidth"] ?>GB</li>
+                            <li><?= $data[$i]["bandwidth"] ?>GB</li>
                             <li><?= $onlineSpaceValue ?><?= $onlineSpace ?></li>
                             <li>
                                 <?php 
-                                    if($data[$i-1]["support"] == 0)
+                                    if($data[$i]["support"] == 0)
                                     {
                                         echo "No";
                                     }
@@ -364,10 +364,10 @@
                                     }
                                 ?>
                             </li>
-                            <li><?= $data[$i-1]["domain"] ?></li>
+                            <li><?= $data[$i]["domain"] ?></li>
                             <li>
                                 <?php
-                                    if($data[$i-1]["hidden_fees"] == 0)
+                                    if($data[$i]["hidden_fees"] == 0)
                                     {
                                         echo "No";
                                     }
